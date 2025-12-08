@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="profile-card">
+        <div class="card-header">
+            <div class="profile-photo">
+                <img src="photo.png" alt="Alemtsehay's profile photo">
+            </div>
+            <div class="profile-info">
+                <h1 class="profile-name">Alemtsehay</h1>
+                <p class="profile-title">Front-end learner</p>
+            </div>
+        </div>
+
+        <div class="card-content">
+            <div class="skill-badge">Beginner CSS</div>
+            <p class="profile-description">
+                Building skills one component at a time. This card showcases consistent spacing and a clean visual
+                hierarchy.
+            </p>
+        </div>
+
+        <div class="card-footer">
+            <div class="card-stats">
+                <div class="max-width">
+                    <i class="fas fa-ruler-horizontal"></i>
+                    <span>Max-width 360px</span>
+                </div>
+                <p class="hover-text">Hover button elevates slightly</p>
+            </div>
+
+            <button class="follow-btn">
+                <i class="fas fa-user-plus"></i> Follow
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const followBtn = document.querySelector('.follow-btn');
+
+            followBtn.addEventListener('click', function () {
+                if (this.innerHTML.includes('Follow')) {
+                    this.innerHTML = '<i class="fas fa-check"></i> Following';
+                    this.style.backgroundColor = '#38a169';
+                    this.style.boxShadow = '0 2px 4px rgba(56, 161, 105, 0.3)';
+                } else {
+                    this.innerHTML = '<i class="fas fa-user-plus"></i> Follow';
+                    this.style.backgroundColor = '#4299e1';
+                    this.style.boxShadow = '0 2px 4px rgba(66, 153, 225, 0.3)';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

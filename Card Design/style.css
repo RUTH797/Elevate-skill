@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 16px;
+}
+
+.profile-card {
+    max-width: 360px;
+    width: 100%;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 16px;
+}
+
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 4px;
+}
+
+.profile-title {
+    font-size: 16px;
+    color: #718096;
+    font-weight: 500;
+}
+
+.card-content {
+    margin-bottom: 24px;
+}
+
+.skill-badge {
+    display: inline-block;
+    background-color: #e2e8f0;
+    color: green;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.profile-description {
+    color: blueviolet;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 16px;
+}
+
+.card-stats {
+    color: #718096;
+    font-size: 14px;
+}
+
+.max-width {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.hover-text {
+    margin-top: 4px;
+    font-size: 13px;
+}
+
+.follow-btn {
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(66, 153, 225, 0.3);
+}
+
+.follow-btn:hover {
+    background-color: #3182ce;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(66, 153, 225, 0.4);
+}
+
+@media (max-width: 400px) {
+    .card-footer {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .profile-card {
+        max-width: 320px;
+    }
+}
