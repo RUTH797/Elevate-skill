@@ -4,35 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce website</title>
+    <title>ShopEasy - E-commerce Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 style="text-align: center;color: blue;">WELCOME TO MY WEBSITE</h1>
+
     <header>
         <div class="container header-content">
             <a href="#" class="logo">
-                <i class="fas-shopping-bag"></i>
+                <i class="fas fa-shopping-bag"></i>
                 shop<span>Easy</span>
             </a>
-            <button class="menu-btn" id="Menubtn">
-                <i class="fas-bars"></i>
+
+            <button class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
             </button>
-            <nav id="main nav" style="display: inline;">
+
+            <nav id="main-nav">
                 <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Products">Products</a></li>
-                    <li><a href="#catagories">Catagories</a></li>
-                    <li><a href="#Deals">Deals</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#deals">Deals</a></li>
                     <li><a href="#about">About us</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
             <div class="header-icons">
-                <a href="#"><i class="fash-search"></i></a>
+                <a href="#"><i class="fas fa-search"></i></a>
                 <a href="#" class="cart-icon">
-                    <i class="fas-shopping-cart"></i>
+                    <i class="fas fa-shopping-cart"></i>
                 </a>
             </div>
         </div>
@@ -40,12 +44,24 @@
 
     <section class="hero" id="home">
         <div class="container">
-            <h1>Everything you need is Here</h1>
+            <h1>Everything You Need Is Here</h1>
             <p>Discover amazing products with affordable prices</p>
             <a href="#products" class="btn">Shop Now</a>
         </div>
     </section>
 
+    <section id="products">
+        <h2>Our Products</h2>
+        <!-- Products will go here -->
+    </section>
+
+    <section id="categories">
+        <h2>Categories</h2>
+        <!-- Categories will go here -->
+    </section>
+
+    <!-- ADD THIS: Link to your JavaScript file -->
+    <script src="script.js"></script>
 </body>
 
 </html>
